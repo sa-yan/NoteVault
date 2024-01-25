@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:paddingHorizontal="20dp"
+    tools:context=".NotesCreateActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/backgroundColorLight"
+        android:layout_marginTop="20dp"
+        >
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Enter Title"
+               android:id="@+id/titleNoteEt"
+               android:textColor="@color/white"
+               android:textColorHint="@color/white"
+               android:textStyle="bold"
+               android:paddingVertical="15dp"
+               android:paddingHorizontal="10dp"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="450dp"
+               android:gravity="top"
+               android:hint="Enter Your notes content"
+               android:id="@+id/contentNoteEt"
+               android:textColor="@color/white"
+               android:textColorHint="@color/white"
+               android:paddingVertical="15dp"
+               android:paddingHorizontal="10dp"/>
+
+           <ProgressBar
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginTop="10dp"
+               android:visibility="gone"
+               android:id="@+id/pgBar"
+               android:background="@color/white"
+               android:layout_marginBottom="10dp"/>
+
+       </LinearLayout>
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="bottom|end"
+        android:id="@+id/saveNote"
+        android:src="@drawable/save"
+        android:background="#fff"
+        android:maxHeight="40dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:padding="20dp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_marginVertical="20sp"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundColorLight"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@color/backgroundColorLight"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginBottom="16dp"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbar"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:layout_below="@id/editTextPassword"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Already have an account? Login here"
+            android:layout_below="@id/btnLogin"
+            android:layout_marginTop="16dp"
+            android:textColor="@color/lavender"/>
+    </LinearLayout>
+
+</RelativeLayout>

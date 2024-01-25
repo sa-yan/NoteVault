@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "549469624793",
+    "project_id": "future-union-363415",
+    "storage_bucket": "future-union-363415.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549469624793:android:7e2236878a82c10f69a1c8",
+        "android_client_info": {
+          "package_name": "com.sayan.awesomenote"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeNkvE0qVHk2bhIFnJcflyj8_S0tFE6V4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

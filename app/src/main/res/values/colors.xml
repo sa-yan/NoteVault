@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue">#add8e6</color>
+    <color name="mint_green">#82E0AA</color>
+    <color name="peach">#ffdab9</color>
+    <color name="lavender">#e6e6fa</color>
+    <color name="light_coral">#f08080</color>
+    <color name="pale_goldenrod">#eee8aa</color>
+    <color name="baby_pink">#ffb6c1</color>
+    <color name="light_slate_gray">#65E4D5</color>
+    <color name="honeydew">#f0fff0</color>
+    <color name="light_orchid">#e6a8d7</color>
+    <color name="backgroundColor">#1C2833</color>
+    <color name="backgroundColorLight">#34495E</color>
+
+</resources>

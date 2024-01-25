@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="10dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/noteCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/note"
+            android:background="@color/light_blue"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TITLE IT IS"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:id="@+id/noteTitle"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:layout_weight="1"
+                    android:ellipsize="end"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/baseline_more_vert"
+                    android:id="@+id/menu_note"
+                    android:gravity="end"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/noteContent"
+                android:padding="10dp"
+                android:text="This is content"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:maxLines="3"
+                android:ellipsize="end"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
